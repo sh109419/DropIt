@@ -21,6 +21,7 @@ class NamedBezierPathsView: UIView {
         // Drawing code
         for (_, path) in bezierPaths {
             path.stroke()
+            //path.fill()
         }
     }
    

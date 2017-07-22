@@ -46,7 +46,7 @@ class DropItView: NamedBezierPathsView, UIDynamicAnimatorDelegate {
                 animator.addBehavior(attachment!)
                 attachment!.action = { [unowned self] in
                     if let attachedDrop = self.attachment!.items.first as? UIView {
-                        self.bezierPaths[PathNames.Attachment] = UIBezierPath.lineFrom(self.attachment!.anchorPoint, to: attachedDrop.center)
+                       self.bezierPaths[PathNames.Attachment] = UIBezierPath.lineFrom(self.attachment!.anchorPoint, to: attachedDrop.center)
                     }
                 }
             }
